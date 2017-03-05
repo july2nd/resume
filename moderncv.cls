@@ -130,10 +130,18 @@
 \AtEndPreamble{
   \@ifpackageloaded{CJK}
     {\RequirePackage[CJKbookmarks]{hyperref}}
-    {\RequirePackage[pdftex]{hyperref}}
-  \AtBeginDocument{
+    {\ifpdf
+\RequirePackage[pdftex]{hyperref}
+\else
+\ifxetex
+\RequirePackage[xetex]{hyperref}
+\else
+\RequirePackage[dvips]{hyperref}
+\fi}
+	\AtBeginDocument{
     \hypersetup{
-      breaklinks,
+     tex4ht,
+	  breaklinks,
       baseurl       = http://,
       pdfborder     = 0 0 0,
       pdfpagemode   = UseNone,% do not show thumbnails or bookmarks on opening
