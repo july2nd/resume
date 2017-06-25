@@ -4,7 +4,6 @@
 %\moderncvtheme[blue, roman]{casual}
 % optional argument are 'blue' (default), 'orange', 'red', 'green', 'grey' and 'roman' (for roman fonts, instead of sans serif fonts)
 \moderncvtheme[blue]{classic}                % idem
-
 \usepackage[utf8]{inputenc}
 
 % adjust the page margins
@@ -28,61 +27,74 @@
 %% \renewcommand*{\sectionfont}{\LARGE\sffamily\monospace\slshape}
 %% \renewcommand*\addressfont{\fontfamily{pzc}\selectfont}
 %% \renewcommand*\sectionfont{\fontfamily{pzc}\fontsize{20}{24}\selectfont}
-
 \begin{document}
 \maketitle
-
-\section{Education}
-\cventry{2012.09--2015.07}{M.S. in Computer Software and Theory}{University of Chinese Academy of Sciences}{}{}{}
-\cventry{2008.09--2012.07}{B.S. in Computer Science and Technology}{Shandong University}{}{}{}
-
 %\section{Master thesis}
 %\cvline{title}{\emph{Title}}
 %\cvline{supervisors}{Supervisors}
 %\cvline{description}{\small Short thesis abstract}
-
 \section{Work Experience}
-\cventry{2017.01--now}{IBM}{China Development Lab (CDL)}{IBM Machine Learning on z/OS Team}{}{The scope of the internship involves mining and analyzing cheating characteristics, making anti-cheating strategies.}
-\cventry{2016.05--2016.12}{IBM}{China Development Lab (CDL)}{Commerce on Cloud DevOps Team}{}{The scope of the internship involves mining and analyzing cheating characteristics, making anti-cheating strategies.}
-\cventry{2015.07--2016.04}{IBM}{China Development Lab (CDL)}{Commerce on Cloud Development Team}{}{Research on products tracking and tracing in internet of things and take charge of sub-projects of China Internet of Things Name Service Platform.}
-
-
+\cventry{2016.12--2017.06}{IBM}{China Development Lab (CDL)}{IBM Machine Learning on z/OS Team}{}{Working on dockerizing IBM Machine Learning on z/OS Platform, and building continous integration and deployment workflow. The efficiency of development, test, build, deployment was improved greatly through my hard work and I was selected for 2017 IBM Team Delivery Excellence Award.\\
+	1.Worked on using Docker to dockerize micro-services, and using Kubernetes to orchestrate containers.\\
+	2.Worked on using Jenkins and Shell scripts to build Docker images automatically.\\
+	3.Worked on using Ansible and Shell scripts to deploy the platform automatically.\\
+	4.Worked on using Selenium and Python to test the Web UI part of the platform automatically.\\
+	5.Worked on setting up and maintaining Docker Registry, Jenkins cluster, Nexus, Spark, Hadoop etc environment.
+}
+\cventry{2016.04--2016.12}{IBM}{China Development Lab (CDL)}{IBM Commerce on Cloud Team}{}{Worked on develpment, build, deployment of a database query tool named AutoQuery.\\
+	1.Worked on implementing the core functionality of AutoQuery using Java, JSP, Jquery, Bootstrap, Liberty, DB2.\\
+	2.Worked on dockerizing AutoQuery using Docker.\\
+	3.Worked on using Jenkins and Shell scripts to build AutoQuery Docker image automatically.\\
+	4.Worked on using IBM Urban Code Deploy to deploy AutoQuery automatically.\\
+	5.Worked on using Logstash, Elastic Search, Kibana to collect and display logs of AutoQuery.\\
+	6.Worked on using Registor, Consul, Consul Template to implement AutoQuery discovery automatically.\\
+	7.Worked on automatical deployment of AutoQuery on Marathon/Mesos.
+}
+\cventry{2015.07--2016.04}{IBM}{China Development Lab (CDL)}{IBM Commerce on Prem Team}{}{Worked on Cross Boarder Trade Project, mainly focused on development and unit test of Catalog, Cart, Calculation, Passport modules using Java, JQuery, Spring, JSP, DB2, Liberty etc.}
 \section{Internship Experience}
-\cventry{2014.06--2014.12}{DIDI TAXI}{Technology Department}{}{}{The scope of the internship involves mining and analyzing cheating characteristics, making anti-cheating strategies.}
-\cventry{2013.03--2014.04}{China Internet Network Information Center}{Advanced Research Department}{}{}{Research on products tracking and tracing in internet of things and take charge of sub-projects of China Internet of Things Name Service Platform.}
-\cventry{2011.09--2012.08}{Institute of Computer Application Technology in Shandong University}{Network Application Lab}{}{}{Worked on the security of websites and developed a hospital website and a fan selector.}
-
-
-\section{Project Experience}
+\cventry{2015.04--2015.06}{IBM}{China Development Lab (CDL)}{IBM Commerce on Prem Team}{}{Worked on OMNI Service Project, mainly focused on development and unit test of Cart module using Java, DB2, Liberty etc.}
+\cventry{2014.06--2015.02}{DIDI}{Product and Technology Department}{Anti-Cheating Team}{}{The scope of the internship involved mining and analyzing cheating characteristics, making anti-cheating strategies.\\
+	1.Worked on replacing HBase by Redis to improve querying efficency.\\
+	2.Worked on development of Suspected Orders Audit module using PHP, Mysql.\\
+	3.Worked on creating unique identification of drivers and passengers using Union-Find algorithm.\\
+	4.Worked on mining trajectory characteristics to extract features.
+}
+%\cventry{2013.03--2014.04}{China Internet Network Information Center}{Advanced Research Department}{}{}{Research on products tracking and tracing in internet of things and take charge of sub-projects of China Internet of Things Name Service Platform.}
+%\cventry{2011.09--2012.08}{Institute of Computer Application Technology in Shandong University}{Network Application Lab}{}{}{Worked on the security of websites and developed a hospital website and a fan selector.}
+%
+\section{Education}
+\cventry{2012.09--2015.07}{M.S. in Computer Software and Theory}{University of Chinese Academy of Sciences}{}{}{}
+\cventry{2008.09--2012.07}{B.S. in Computer Science and Technology}{Shandong University}{}{}{}
+%\section{Project Experience}
 %% \subsection{Research Projects}
 
-\cventry{2014.04--2014.06}
-{Yueying App}
-{Android}
-{Startup Project}{}
-{
-The Yueying app is a social application based on LBS, aimed at offering people opportunities to make friends by seeing films together. I have been working as a technicist in Yueying studio, and responsible for designing and implementing most functions of the back-end server and a few front-end development, including purchasing server, server configuration, GPS location etc.
-}
-
-\vspace*{0.2\baselineskip}
-\cventry{2013.09--2013.12}
-{Taxi recommender}
-{}
-{Competition Project}{}
-{
-This competition was organized by Chinese Academy of Sciences (CAS), China Computer Federation (CCF) and Chongqing Municipal People’s Government. Our task was to predict the probability and waiting time of the potential passengers who are waiting for a vacant taxi, given the passengers’ current positions. We proposed a model to serve the passengers by mining the historical GPS data of taxis in Beijing. I acted as the vice team leader and worked on the mathematical modeling and program development. Key technologies include traffic flow modeling, Hadoop, HBase, Google map. Finally our team won the 3rdPrize(top17 of 660 teams).
-}
-
-\vspace*{0.2\baselineskip}
-\cventry{2012.11--2013.01}
-{Weibo character predictor}
-{}
-{Course Project}{}
-{
-We analyzed the blogger's character(internal or external) through mining his weibo contents and predicted whether he had the trend to be depressed. Key technologies include data mining, classification, NLP etc.
-}
-
-
+%\cventry{2014.04--2014.06}
+%{Yueying App}
+%{Android}
+%{Startup Project}{}
+%{
+%The Yueying app is a social application based on LBS, aimed at offering people opportunities to make friends by seeing films together. I have been working as a technicist in Yueying studio, and responsible for designing and implementing most functions of the back-end server and a few front-end development, including purchasing server, server configuration, GPS location etc.
+%}
+%
+%\vspace*{0.2\baselineskip}
+%\cventry{2013.09--2013.12}
+%{Taxi recommender}
+%{}
+%{Competition Project}{}
+%{
+%This competition was organized by Chinese Academy of Sciences (CAS), China Computer Federation (CCF) and Chongqing Municipal People’s Government. Our task was to predict the probability and waiting time of the potential passengers who are waiting for a vacant taxi, given the passengers’ current positions. We proposed a model to serve the passengers by mining the historical GPS data of taxis in Beijing. I acted as the vice team leader and worked on the mathematical modeling and program development. Key technologies include traffic flow modeling, Hadoop, HBase, Google map. Finally our team won the 3rdPrize(top17 of 660 teams).
+%}
+%
+%\vspace*{0.2\baselineskip}
+%\cventry{2012.11--2013.01}
+%{Weibo character predictor}
+%{}
+%{Course Project}{}
+%{
+%We analyzed the blogger's character(internal or external) through mining his weibo contents and predicted whether he had the trend to be depressed. Key technologies include data mining, classification, NLP etc.
+%}
+%
+%
 
 %% \cventry{2009}
 %% {Operating System Teaching Assistant}{}{}{}{}
@@ -93,43 +105,43 @@ We analyzed the blogger's character(internal or external) through mining his wei
 %% \cventry{2008}{Succour Administration System for Changzheng Community}{Java, JSP}{}{}{A simple web-based succour management system}
 %% \cventry{2007}{Train Ticket Booking System for Fudan University}{Java, JSP}{}{}{My first out-sourcing project}
 
-\section{Publications}
-
-\cventry{2014}
-{\textbf{Yangdong Liu}\textnormal{, Ye Tian, Bo Yuan, Chang Wu, Weishuo Qian, Wei Mao}}
-{Providing Useful Information for Passengers Based on TTF Model}{IEEE International Conference on Internet of Things 2014}
-{}{}{}
-
-\section{Selected Awards and Honors}
-
-\cventry{2014}{2nd Prize Scholarship in UCAS}{}{}{}{}
-\cventry{2013}{3rd Prize for National Big Data Innovation Competition}{}{}{}{}
-\cventry{2012}{Outstanding Graduate Award in SDU}{}{}{}{}
-\cventry{2011}{National Encouragement Scholarship in SDU}{}{}{}{}
-\cventry{2010,2011}{The First Prize Scholarship in SDU}{}{}{}{}
-\cventry{2010,2011}{Merit Student in SDU}{}{}{}{}
-
-\section{Selected non-Academic Service}
-
-\cventry{2013.07--2014.07}{Vice President and Minister of the Academic Department of the Student Union in UCAS}{Lead and organize student services including annual festival events, academic salons and career forums to facilitate the students’ campus life}{}{}{}
-
-
-\section{Skills}
-
-
-\cventry{Languages}{C = C++ = Java > Python = Shell = php}{}{}{}{}
-\cventry{Kernels}{Linux, Mac OS, Windows, Android}{}{}{}{}
-\cventry{Database}{Mysql, Hbase, Redis}{}{}{}{}
-%% \cventry{Application Dev}{Ruby on Rails, iOS development}{}{}{}{}
-\cventry{English}{CET-4 588; CET-6 492}{skilled in spoken and written English}{}{}{}
-
-\section{Community}
-\cventry{Blog}{\url{http://www.lydstar.com}}{}{}{}{}
-\cventry{Techblog}{\url{http://blog.csdn.net/lydyangliu}}{}{}{}{}
-\cventry{GitHub}{\url{https://github.com/lydgithub}}{}{}{}{}
-
-\section{Hobbies}
-\cventry{}{Badminton, Table tennis, Music, Swimming}{}{}{}{}
+%\section{Publications}
+%
+%\cventry{2014}
+%{\textbf{Yangdong Liu}\textnormal{, Ye Tian, Bo Yuan, Chang Wu, Weishuo Qian, Wei Mao}}
+%{Providing Useful Information for Passengers Based on TTF Model}{IEEE International Conference on Internet of Things 2014}
+%{}{}{}
+%
+%\section{Selected Awards and Honors}
+%
+%\cventry{2014}{2nd Prize Scholarship in UCAS}{}{}{}{}
+%\cventry{2013}{3rd Prize for National Big Data Innovation Competition}{}{}{}{}
+%\cventry{2012}{Outstanding Graduate Award in SDU}{}{}{}{}
+%\cventry{2011}{National Encouragement Scholarship in SDU}{}{}{}{}
+%\cventry{2010,2011}{The First Prize Scholarship in SDU}{}{}{}{}
+%\cventry{2010,2011}{Merit Student in SDU}{}{}{}{}
+%
+%\section{Selected non-Academic Service}
+%
+%\cventry{2013.07--2014.07}{Vice President and Minister of the Academic Department of the Student Union in UCAS}{Lead and organize student services including annual festival events, academic salons and career forums to facilitate the students’ campus life}{}{}{}
+%
+%
+%\section{Skills}
+%
+%
+%\cventry{Languages}{C = C++ = Java > Python = Shell = php}{}{}{}{}
+%\cventry{Kernels}{Linux, Mac OS, Windows, Android}{}{}{}{}
+%\cventry{Database}{Mysql, Hbase, Redis}{}{}{}{}
+%%% \cventry{Application Dev}{Ruby on Rails, iOS development}{}{}{}{}
+%\cventry{English}{CET-4 588; CET-6 492}{skilled in spoken and written English}{}{}{}
+%
+%\section{Community}
+%\cventry{Blog}{\url{http://www.lydstar.com}}{}{}{}{}
+%\cventry{Techblog}{\url{http://blog.csdn.net/lydyangliu}}{}{}{}{}
+%\cventry{GitHub}{\url{https://github.com/lydgithub}}{}{}{}{}
+%
+%\section{Hobbies}
+%\cventry{}{Badminton, Table tennis, Music, Swimming}{}{}{}{}
 
 % \closesection{}                   % needed to renewcommands
 % \renewcommand{\listitemsymbol}{-} % change the symbol for lists
@@ -143,5 +155,4 @@ We analyzed the blogger's character(internal or external) through mining his wei
 %\cvlistdoubleitem[\Neutral]{Item 1}{Item 4}
 %\cvlistdoubleitem[\Neutral]{Item 2}{Item 5}
 %cvlistdoubleitem[\Neutral]{Item 3}{}
-
 \end{document}
